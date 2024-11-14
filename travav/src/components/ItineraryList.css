@@ -1,0 +1,25 @@
+/* Container for the entire itinerary */
+.itinerary-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents items from wrapping to a new line */
+    overflow-x: auto; /* Allows horizontal scrolling if there are many days */
+    gap: 20px; /* Space between each day */
+    padding: 20px;
+}
+
+/* Styling for each day's container */
+.itinerary-day {
+    flex: 0 0 auto; /* Ensures that each day container maintains its own size */
+    min-width: 250px; /* Sets a minimum width for each day to fit content */
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    background-color: #fff; /* White background to match the design */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Container for events inside each day */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between events within the same day */
+}

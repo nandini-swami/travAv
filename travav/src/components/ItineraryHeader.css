@@ -1,0 +1,30 @@
+.itinerary-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #EAF6F9; /* Light blue shade similar to your UI */
+}
+
+/* Styling for "MY PLAN" to make it look like a button */
+.itinerary-title {
+    font-size: 1.5em;
+    color: #000; /* Black text */
+    background-color: #AFE4F1; /* Light blue background */
+    border: 2px solid #4a708b; /* Darker blue border to match your example */
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center;
+}
+
+/* Navigation button styling */
+nav {
+    margin-left: auto; /* Pushes the navigation to the right */
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #E5F3F7; /* Same blue as buttons in your screenshot */
+    border: none;
+    cursor: pointer;
+}
