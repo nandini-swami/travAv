@@ -1,20 +1,27 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.png'; // Import the logo image
-import mapImage from './map.png'; // Import the map image
-import menuIcon from './menu.png'; // Import the menu icon
-import profileIcon from './profile.png'; // Import the profile icon
-import settingsIcon from './settings.png'; // Import the settings icon
-import pierImage from './pier.png'; // Import the pier image
-import profile from './profile.png';
-import HomePage from './HomePage/HomePage.js';
+import HomePage from './HomePage/HomePage'; // Import HomePage
+import ItineraryPage from './pages/ItineraryPage'; // Import ItineraryPage
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Import routing components
 
 function App() {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+    return (
+        <Router>
+            <div className="App">
+                {/* Navigation Links */}
+                <nav>
+                    <Link to="/">Home</Link> | {/* Link to HomePage */}
+                    <Link to="/itinerary">Itinerary</Link> {/* Link to ItineraryPage */}
+                </nav>
+
+                {/* Define Routes */}
+                <Routes>
+                    <Route path="/" element={<HomePage />} /> {/* Route to HomePage */}
+                    <Route path="/itinerary" element={<ItineraryPage />} /> {/* Route to ItineraryPage */}
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
