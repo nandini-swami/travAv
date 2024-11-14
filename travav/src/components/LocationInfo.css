@@ -1,0 +1,39 @@
+/* src/components/LocationInfo/LocationInfo.css */
+
+/* Container for the location information */
+.location-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the location information */
+    gap: 10px; /* Space between location name and dates */
+    margin: 20px 0; /* Margin to separate from other sections */
+}
+
+/* Styling for the location title */
+.location-title {
+    font-size: 1.8em;
+    color: #000; /* Black text */
+    margin: 0;
+}
+
+/* Styling for the dates */
+.location-dates {
+    font-size: 1.2em;
+    color: #555; /* Grey text for dates */
+    margin: 0;
+    display: flex;
+    align-items: center; /* Align the pencil icon vertically with the text */
+    gap: 5px; /* Space between the dates and the icon */
+}
+
+/* Styling for the edit icon */
+.edit-icon {
+    font-size: 1em; /* Set the size of the icon to match the text */
+    color: #4a708b; /* Dark blue color to match the design */
+    cursor: pointer; /* Indicate that the icon is clickable */
+    transition: transform 0.2s; /* Add a slight transform effect on hover */
+}
+
+.edit-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}

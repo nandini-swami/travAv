@@ -1,0 +1,52 @@
+.event-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+.event-icon-container {
+    background-color: #AFE4F1; /* Light blue background color */
+    padding: 10px; /* Padding to create space around the icon */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Set a fixed width to maintain consistency */
+    height: 60px; /* Set a fixed height to maintain consistency */
+    margin-right: 15px;
+}
+
+.event-icon {
+    width: 70%; /* Set the icon size relative to the container to ensure it fits */
+    height: 70%; /* This makes sure the icon maintains the same aspect ratio */
+    color: #4a708b; /* Dark blue color for the icon */
+}
+
+.event-details {
+    flex-grow: 1;
+}
+
+.event-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #000; /* Black color for event name */
+}
+
+.event-details p {
+    margin: 5px 0 0;
+    color: #ff7f50; /* Coral color for event time */
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    color: #ff7f50; /* Coral color for delete button */
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
