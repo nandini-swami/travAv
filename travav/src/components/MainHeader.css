@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #FFFFFF; /* White background to match the design */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for separation */
+    background-color: #FFFFFF; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .main-header-left {
@@ -20,8 +20,15 @@
 
 .main-title {
     font-size: 1.8em;
-    color: #ff7f50; /* Coral color to match the logo text */
-    margin: 0;
+    color: #ff7f50; 
+    align-items: ;
+}
+
+/* Styling for the tagline */
+.tagline {
+    font-size: 0.9em;
+    color: #555; 
+    margin-top: 5px;
 }
 
 .main-header-right {

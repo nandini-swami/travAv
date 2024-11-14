@@ -1,20 +1,60 @@
+/* Container for the entire itinerary */
+.itinerary-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for each day's container */
+.itinerary-day {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: stretch;    /* Ensure all children stretch to fit the container width */
+    width: 280px;            /* Set a fixed width to keep day containers consistent */
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    gap: 15px;               /* Add spacing between events inside each day */
+}
+
+/* Container for events inside each day */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between events within the same day */
+}
+
+/* Event styling */
 .event-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px;
+    justify-content: space-between; /* Ensure the delete button and details are on opposite ends */
+    padding: 10px;
     border-bottom: 1px solid #e0e0e0;
     margin: 10px 0;
 }
 
-.event-icon {
-    background-color: #AFE4F1; /* Light blue background color */
+/* Icon container for the event */
+.event-icon-container {
+    background-color: #AFE4F1;
     padding: 10px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    color: #4a708b; /* Dark blue color for the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
     margin-right: 15px;
+}
+
+/* The actual event icon */
+.event-icon {
+    width: 50%;
+    height: 50%;
+    color: #4a708b;
 }
 
 .event-details {
@@ -24,12 +64,12 @@
 .event-details h3 {
     margin: 0;
     font-size: 1.2em;
-    color: #000; /* Black color for event name */
+    color: #000;
 }
 
 .event-details p {
     margin: 5px 0 0;
-    color: #ff7f50; /* Coral color for event time (matches 'CLOSES AT 9PM' style) */
+    color: #ff7f50;
     font-weight: bold;
     font-size: 0.9em;
 }
@@ -37,7 +77,7 @@
 .delete-button {
     background: none;
     border: none;
-    color: #ff7f50; /* Coral color */
+    color: #ff7f50;
     font-size: 1.5em;
     cursor: pointer;
     margin-left: 10px;

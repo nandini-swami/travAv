@@ -1,25 +1,52 @@
-/* Container for the entire itinerary */
-.itinerary-container {
+.event-item {
     display: flex;
-    flex-wrap: nowrap; /* Prevents items from wrapping to a new line */
-    overflow-x: auto; /* Allows horizontal scrolling if there are many days */
-    gap: 20px; /* Space between each day */
-    padding: 20px;
-}
-
-/* Styling for each day's container */
-.itinerary-day {
-    flex: 0 0 auto; /* Ensures that each day container maintains its own size */
-    min-width: 250px; /* Sets a minimum width for each day to fit content */
-    border: 1px solid #e0e0e0;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
-    background-color: #fff; /* White background to match the design */
-    border-radius: 8px; /* Rounded corners */
+    border-bottom: 1px solid #e0e0e0;
+    margin: 10px 0;
 }
 
-/* Container for events inside each day */
-.event-list {
+.event-icon-container {
+    background-color: #AFE4F1; /* Light blue background color */
+    padding: 10px; /* Padding to create space around the icon */
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    gap: 15px; /* Space between events within the same day */
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Set a fixed width to maintain consistency */
+    height: 60px; /* Set a fixed height to maintain consistency */
+    margin-right: 15px;
+}
+
+.event-icon {
+    width: 70%; /* Set the icon size relative to the container to ensure it fits */
+    height: 70%; /* This makes sure the icon maintains the same aspect ratio */
+    color: #4a708b; /* Dark blue color for the icon */
+}
+
+.event-details {
+    flex-grow: 1;
+}
+
+.event-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #000; /* Black color for event name */
+}
+
+.event-details p {
+    margin: 5px 0 0;
+    color: #ff7f50; /* Coral color for event time */
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    color: #ff7f50; /* Coral color for delete button */
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
 }

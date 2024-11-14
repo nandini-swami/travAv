@@ -27,7 +27,9 @@ function ItineraryItem({ event }) {
 
     return (
         <div className="event-item">
-            <IconComponent className="event-icon" />
+            <div className="event-icon-container">
+                <IconComponent className="event-icon" />
+            </div>
             <div className="event-details">
                 <h3>{event.name}</h3>
                 <p>{event.time}</p>
