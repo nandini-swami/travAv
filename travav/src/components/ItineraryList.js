@@ -15,6 +15,14 @@ const itineraryData = [
         events: [
             { name: "Jazz Festival", time: "3 - 5PM" }
         ]
+    },
+    {
+        date: "October 14",
+        events: [
+            { name: "Museum of Art", time: "1PM - 5PM" },
+            { name: "Digiorno Pizza", time: "Closes at 10PM" },
+            { name: "Sunset Boat Tour", time: "6:30PM - 8:30PM" }
+        ]
     }
 ];
 

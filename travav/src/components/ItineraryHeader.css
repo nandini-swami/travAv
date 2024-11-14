@@ -1,30 +1,46 @@
+/* Main header container */
 .itinerary-header {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #EAF6F9; /* Light blue shade similar to your UI */
+    background-color: #EAF6F9; /* Light blue shade */
+    gap: 20px; /* Space between items */
 }
 
 /* Styling for "MY PLAN" to make it look like a button */
 .itinerary-title {
     font-size: 1.5em;
     color: #000; /* Black text */
-    background-color: #AFE4F1; /* Light blue background */
-    border: 2px solid #4a708b; /* Darker blue border to match your example */
+    background-color: #AFE4F1; /* Light blue background similar to buttons */
+    border: 2px solid #4a708b; /* Darker blue border to match the example */
     padding: 10px 20px; /* Add padding to make it look like a button */
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners to match button style */
     text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a button effect */
+}
+
+/* Navigation bar styling */
+.itinerary-nav {
+    display: flex;
+    margin-left: auto; /* Push the navigation to the right */
+    gap: 10px; /* Space between navigation buttons */
 }
 
 /* Navigation button styling */
-nav {
-    margin-left: auto; /* Pushes the navigation to the right */
+.itinerary-nav button {
+    padding: 10px 20px; /* Padding for button size */
+    background-color: #E5F3F7; /* Same blue as buttons in the screenshot */
+    border: 2px solid #4a708b; /* Consistent border color to match other buttons */
+    border-radius: 20px; /* Rounded corners to match button style */
+    font-size: 1em; /* Font size for consistency */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for button effect */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
 }
 
-nav button {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: #E5F3F7; /* Same blue as buttons in your screenshot */
-    border: none;
-    cursor: pointer;
+/* Navigation button hover effect */
+.itinerary-nav button:hover {
+    background-color: #cbeff7; /* Slightly lighter blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
 }

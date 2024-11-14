@@ -7,6 +7,7 @@ function ItineraryItem({ event }) {
 
     switch (event.name) {
         case "Navy Pier":
+        case "Sunset Boat Tour": // Use the ship icon for Sunset Boat Tour
             IconComponent = FaShip;
             break;
         case "Chicago Flea Market":
